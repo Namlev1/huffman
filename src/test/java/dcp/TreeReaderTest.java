@@ -1,7 +1,7 @@
-package pl.edu.pw.ee.aisd2023zlab5.dcp;
+package dcp;
 
 import org.junit.jupiter.api.Test;
-import pl.edu.pw.ee.aisd2023zlab5.model.Node;
+import model.Node;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -14,7 +14,7 @@ class TreeReaderTest {
     @Test
     public void should_ReadTree_WithFiveLeaves() throws IOException {
         // given
-        String path = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/dcp/niemanie_tree.cmp";
+        String path = "src/test/java/text/dcp/niemanie_tree.cmp";
         InputStream is = new FileInputStream(path);
         Buffer buffer = new Buffer(is, 6);
         TreeReader treeReader = new TreeReader(buffer);

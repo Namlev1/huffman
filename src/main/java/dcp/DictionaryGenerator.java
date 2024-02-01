@@ -1,6 +1,6 @@
-package pl.edu.pw.ee.aisd2023zlab5.dcp;
+package dcp;
 
-import pl.edu.pw.ee.aisd2023zlab5.model.Node;
+import model.Node;
 
 public class DictionaryGenerator {
     private long code;

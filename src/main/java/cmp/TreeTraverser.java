@@ -1,8 +1,8 @@
-package pl.edu.pw.ee.aisd2023zlab5.cmp;
+package cmp;
 
-import pl.edu.pw.ee.aisd2023zlab5.model.Code;
-import pl.edu.pw.ee.aisd2023zlab5.model.Node;
-import pl.edu.pw.ee.aisd2023zlab5.model.Root;
+import model.Code;
+import model.Node;
+import model.Root;
 
 // This class traverse through Huffman tree to generate
 // both dictionary and tree structure (ready to write

@@ -1,8 +1,11 @@
-package pl.edu.pw.ee.aisd2023zlab5.cmp;
+package cmp;
 
-import pl.edu.pw.ee.aisd2023zlab5.model.Code;
 
-import java.io.*;
+import model.Code;
+
+import java.io.BufferedReader;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class Encoder {
     private final Dictionary dict;

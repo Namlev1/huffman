@@ -1,8 +1,8 @@
-package pl.edu.pw.ee.aisd2023zlab5.cmp;
+package cmp;
 
 import org.junit.jupiter.api.Test;
-import pl.edu.pw.ee.aisd2023zlab5.model.Code;
-import pl.edu.pw.ee.aisd2023zlab5.model.Root;
+import model.Code;
+import model.Root;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

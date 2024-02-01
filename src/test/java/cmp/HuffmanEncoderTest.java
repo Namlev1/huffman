@@ -1,4 +1,4 @@
-package pl.edu.pw.ee.aisd2023zlab5.cmp;
+package cmp;
 
 import org.junit.jupiter.api.Test;
 
@@ -14,9 +14,9 @@ class HuffmanEncoderTest {
     @Test
     public void should_EncodeFile_WithOneCharacter_AndFullBytes() throws IOException {
         // given
-        String origPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/cmp/c.txt";
-        String outPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/cmp/c.cmp";
-        String refPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/cmp/c-ref.cmp";
+        String origPath = "src/test/java/text/cmp/c.txt";
+        String outPath = "src/test/java/text/cmp/c.cmp";
+        String refPath = "src/test/java/text/cmp/c-ref.cmp";
         HuffmanEncoder huffmanEncoder = new HuffmanEncoder();
 
         // when
@@ -29,9 +29,9 @@ class HuffmanEncoderTest {
     @Test
     public void should_EncodeFile_WithOneCharacter_AndNotFullBytes() throws IOException {
         // given
-        String origPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/cmp/d.txt";
-        String outPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/cmp/d.cmp";
-        String refPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/cmp/d-ref.cmp";
+        String origPath = "src/test/java/text/cmp/d.txt";
+        String outPath = "src/test/java/text/cmp/d.cmp";
+        String refPath = "src/test/java/text/cmp/d-ref.cmp";
         HuffmanEncoder huffmanEncoder = new HuffmanEncoder();
 
         // when
@@ -44,9 +44,9 @@ class HuffmanEncoderTest {
     @Test
     public void should_EncodeFile_With2Characters() throws IOException {
         // given
-        String origPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/cmp/aabbb.txt";
-        String outPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/cmp/aabbb.cmp";
-        String refPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/cmp/aabbb-ref.cmp";
+        String origPath = "src/test/java/text/cmp/aabbb.txt";
+        String outPath = "src/test/java/text/cmp/aabbb.cmp";
+        String refPath = "src/test/java/text/cmp/aabbb-ref.cmp";
         HuffmanEncoder huffmanEncoder = new HuffmanEncoder();
 
         // when
@@ -60,7 +60,7 @@ class HuffmanEncoderTest {
     @Test
     public void should_ThrowException_IfFileIsEmpty(){
         // given
-        String origPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/cmp/empty.txt";
+        String origPath = "src/test/java/text/cmp/empty.txt";
         HuffmanEncoder huffmanEncoder = new HuffmanEncoder();
 
         // when
@@ -97,7 +97,7 @@ class HuffmanEncoderTest {
     @Test
     public void should_ThrowException_IfFileHasWrongExtension(){
         // given
-        String origPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/cmp/c-ref.cmp";
+        String origPath = "src/test/java/text/cmp/c-ref.cmp";
         HuffmanEncoder huffmanEncoder = new HuffmanEncoder();
 
         // when
@@ -115,7 +115,7 @@ class HuffmanEncoderTest {
     @Test
     public void should_ThrowException_IfFileIsNotAsciiOnly() throws IOException {
         // given
-        String origPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/cmp/aogonek.txt";
+        String origPath = "src/test/java/text/cmp/aogonek.txt";
         HuffmanEncoder huffmanEncoder = new HuffmanEncoder();
 
         // when

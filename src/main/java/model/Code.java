@@ -1,4 +1,4 @@
-package pl.edu.pw.ee.aisd2023zlab5.model;
+package model;
 
 public class Code {
     private final long bitCode;

@@ -1,7 +1,5 @@
-package pl.edu.pw.ee.aisd2023zlab5;
-
-import pl.edu.pw.ee.aisd2023zlab5.cmp.HuffmanEncoder;
-import pl.edu.pw.ee.aisd2023zlab5.dcp.HuffmanDecoder;
+import cmp.HuffmanEncoder;
+import dcp.HuffmanDecoder;
 
 public class Huffman {
     public static void main(String[] args){

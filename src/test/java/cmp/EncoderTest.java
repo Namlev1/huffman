@@ -1,7 +1,7 @@
-package pl.edu.pw.ee.aisd2023zlab5.cmp;
+package cmp;
 
 import org.junit.jupiter.api.Test;
-import pl.edu.pw.ee.aisd2023zlab5.model.Code;
+import model.Code;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -12,9 +12,9 @@ class EncoderTest {
     @Test
     public void should_EncodeFile_With2FullBytes() throws IOException {
         // given
-        String origPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/encode/c.txt";
-        String cmpPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/encode/c.cmp";
-        String refPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/encode/c-ref.cmp";
+        String origPath = "src/test/java/text/encode/c.txt";
+        String cmpPath = "src/test/java/text/encode/c.cmp";
+        String refPath = "src/test/java/text/encode/c-ref.cmp";
         Code code = new Code(0b0, 1);
         Dictionary dict = new Dictionary();
         dict.add('c', code);
@@ -45,9 +45,9 @@ class EncoderTest {
     @Test
     public void should_EncodeFile_With2NotFullBytes() throws IOException {
         // given
-        String origPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/encode/d.txt";
-        String cmpPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/encode/d.cmp";
-        String refPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/encode/d-ref.cmp";
+        String origPath = "src/test/java/text/encode/d.txt";
+        String cmpPath = "src/test/java/text/encode/d.cmp";
+        String refPath = "src/test/java/text/encode/d-ref.cmp";
         Code code = new Code(0b0, 1);
         Dictionary dict = new Dictionary();
         dict.add('d', code);

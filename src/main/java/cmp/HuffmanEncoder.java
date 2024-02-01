@@ -1,6 +1,6 @@
-package pl.edu.pw.ee.aisd2023zlab5.cmp;
+package cmp;
 
-import pl.edu.pw.ee.aisd2023zlab5.model.Root;
+import model.Root;
 
 import java.io.*;
 

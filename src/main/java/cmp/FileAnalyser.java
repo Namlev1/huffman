@@ -1,4 +1,4 @@
-package pl.edu.pw.ee.aisd2023zlab5.cmp;
+package cmp;
 
 import java.io.*;
 

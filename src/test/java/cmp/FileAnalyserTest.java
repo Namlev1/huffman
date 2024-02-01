@@ -1,4 +1,4 @@
-package pl.edu.pw.ee.aisd2023zlab5.cmp;
+package cmp;
 
 import org.junit.jupiter.api.Test;
 
@@ -35,7 +35,7 @@ public class FileAnalyserTest {
 
         // when
         Throwable exceptionCaught = catchThrowable(() -> {
-            fileAnalyser.analyse("src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/cmp/empty.txt");
+            fileAnalyser.analyse("src/test/java/text/cmp/empty.txt");
         });
 
         // then
@@ -52,7 +52,7 @@ public class FileAnalyserTest {
 
         // when
         assertDoesNotThrow(() -> {
-            fileAnalyser.analyse("src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/cmp/all_ascii.txt");
+            fileAnalyser.analyse("src/test/java/text/cmp/all_ascii.txt");
         });
 
     }
@@ -64,7 +64,7 @@ public class FileAnalyserTest {
 
         // when
         assertDoesNotThrow(() -> {
-            fileAnalyser.analyse("src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/cmp/exist.txt");
+            fileAnalyser.analyse("src/test/java/text/cmp/exist.txt");
         });
     }
 
@@ -74,7 +74,7 @@ public class FileAnalyserTest {
         FileAnalyser fileAnalyser = new FileAnalyser();
 
         // when
-        fileAnalyser.analyse("src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/cmp/aabba.txt");
+        fileAnalyser.analyse("src/test/java/text/cmp/aabba.txt");
 
         // then
         int[] result = fileAnalyser.getLetterCount();
@@ -88,7 +88,7 @@ public class FileAnalyserTest {
         FileAnalyser fileAnalyser = new FileAnalyser();
 
         // when
-        fileAnalyser.analyse("src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/cmp/newline.txt");
+        fileAnalyser.analyse("src/test/java/text/cmp/newline.txt");
 
         // then
         int[] result = fileAnalyser.getLetterCount();

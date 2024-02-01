@@ -1,6 +1,6 @@
-package pl.edu.pw.ee.aisd2023zlab5.cmp;
+package cmp;
 
-import pl.edu.pw.ee.aisd2023zlab5.model.Node;
+import model.Node;
 
 public class HeapPQ {
     private final Node[] queue;

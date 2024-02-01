@@ -1,4 +1,4 @@
-package pl.edu.pw.ee.aisd2023zlab5.dcp;
+package dcp;
 
 import java.io.IOException;
 import java.io.InputStream;

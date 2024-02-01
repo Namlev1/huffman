@@ -1,4 +1,4 @@
-package pl.edu.pw.ee.aisd2023zlab5.dcp;
+package dcp;
 
 import org.junit.jupiter.api.Test;
 
@@ -13,9 +13,9 @@ class DecoderTest {
     @Test
     public void should_DecodeFile_WithTwoCharacters() throws IOException {
         // given
-        String inPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/dcp/aabbb.cmp";
-        String outPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/dcp/aabbb.txt";
-        String refPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/dcp/aabbb-ref.txt";
+        String inPath = "src/test/java/text/dcp/aabbb.cmp";
+        String outPath = "src/test/java/text/dcp/aabbb.txt";
+        String refPath = "src/test/java/text/dcp/aabbb-ref.txt";
         Decoder decoder = new Decoder(inPath, outPath);
 
         // when
@@ -28,9 +28,9 @@ class DecoderTest {
     @Test
     public void should_DecodeFile_WithTwoLinesOfText() throws IOException {
         // given
-        String inPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/dcp/niemanie_2lines.cmp";
-        String outPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/dcp/niemanie_2lines.txt";
-        String refPath = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/dcp/niemanie_2lines-r.txt";
+        String inPath = "src/test/java/text/dcp/niemanie_2lines.cmp";
+        String outPath = "src/test/java/text/dcp/niemanie_2lines.txt";
+        String refPath = "src/test/java/text/dcp/niemanie_2lines-r.txt";
         Decoder decoder = new Decoder(inPath, outPath);
 
         // when

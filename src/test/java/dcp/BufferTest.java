@@ -1,4 +1,4 @@
-package pl.edu.pw.ee.aisd2023zlab5.dcp;
+package dcp;
 
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +11,7 @@ class BufferTest {
     @Test
     public void should_readFiveBits() throws IOException {
         // given
-        String path = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/dcp/random.cmp";
+        String path = "src/test/java/text/dcp/random.cmp";
         InputStream is = new FileInputStream(path);
         Buffer buffer = new Buffer(is, 2);
 
@@ -26,7 +26,7 @@ class BufferTest {
     @Test
     public void should_readNineBits() throws IOException {
         // given
-        String path = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/dcp/random.cmp";
+        String path = "src/test/java/text/dcp/random.cmp";
         InputStream is = new FileInputStream(path);
         Buffer buffer = new Buffer(is, 2);
 
@@ -41,7 +41,7 @@ class BufferTest {
     @Test
     public void should_readTwo_AndThenThreeBits() throws IOException {
         // given
-        String path = "src/test/java/pl/edu/pw/ee/aisd2023zlab5/text/dcp/random.cmp";
+        String path = "src/test/java/text/dcp/random.cmp";
         InputStream is = new FileInputStream(path);
         Buffer buffer = new Buffer(is, 2);
 

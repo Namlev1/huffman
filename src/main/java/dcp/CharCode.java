@@ -1,6 +1,6 @@
-package pl.edu.pw.ee.aisd2023zlab5.dcp;
+package dcp;
 
-import pl.edu.pw.ee.aisd2023zlab5.model.Code;
+import model.Code;
 
 public class CharCode extends Code {
     private final char character;

@@ -1,6 +1,6 @@
-package pl.edu.pw.ee.aisd2023zlab5.cmp;
+package cmp;
 
-import pl.edu.pw.ee.aisd2023zlab5.model.Code;
+import model.Code;
 
 public class Dictionary {
     private final Code[] codes;
